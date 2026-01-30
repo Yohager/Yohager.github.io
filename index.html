@@ -18,7 +18,7 @@
 <td align="left"><p><font size="6">Yuhang Guo (郭宇航)</font></a><br />
  <br />
 
-I am a second-year Ph.D. student at UNSW Sydney. Before that, I obtained my master's and bachelor's degree from University of Electronic Science and Technology of China (UESTC). My current research is mainly about computational economics: algorithmic game theory, computational social choice, etc. <br><br />
+I am a third-year Ph.D. student at UNSW Sydney. Before that, I obtained my master's and bachelor's degree from University of Electronic Science and Technology of China (UESTC). My current research is mainly about computational economics: algorithmic game theory, computational social choice, etc. <br><br />
 
 Email: guoyuhang0921 at gmail.com <b>or</b> yuhang.guo2 at unsw.edu.au <br />
 
@@ -36,7 +36,7 @@ Email: guoyuhang0921 at gmail.com <b>or</b> yuhang.guo2 at unsw.edu.au <br />
 <A NAME="Biography"><h2>Biography</h2></A>
 	<p>
 				<ul>
-			<li><b>Ph.D.</b> (2024/01~present)	<br>
+			<li><b>Ph.D.</b> (2024/02~present)	<br>
             <a href="https://www.cse.unsw.edu.au/~adt/">Algorithmic Decision Theory (ADT)</a> Group<br> 
             <a href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/">Computer Science and Engineering</a><br>
 			<a href="https://www.unsw.edu.au/">UNSW Sydney</a>, NSW, Sydney Australia <br>
@@ -68,30 +68,258 @@ Email: guoyuhang0921 at gmail.com <b>or</b> yuhang.guo2 at unsw.edu.au <br />
 	</p>
 <br />
 
+<style>
+        /* ==================== 论文列表样式开始 ==================== */
+        
+        /* 列表容器：去除默认圆点，左侧留白 */
+        ul.pub-list-vertical {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+            max-width: 900px; /* 限制最大宽度，防止在大屏上太宽难读 */
+        }
 
+        /* 单个论文条目容器 */
+        li.pub-item {
+            margin-bottom: 10px;        /* 条目之间的垂直间距 */
+            padding-left: 16px;         /* 内容左内边距 */
+            border-left: 4px solid #eee;/* 左侧淡灰色竖线 */
+            transition: all 0.3s ease;  /* 添加平滑过渡效果 */
+        }
+
+        /* 鼠标悬停时的交互效果：竖线变蓝 */
+        li.pub-item:hover {
+            border-left-color: #0066cc;
+        }
+
+        /* 第1行：论文标题 */
+        .pub-title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            font-weight: 700;       /* 加粗 */
+            font-size: 1.02em;      /* 字体稍大 */
+            color: #2c3e50;         /* 深色标题 */
+            margin-bottom: 1px;     /* 下方间距 */
+            line-height: 1.4;
+        }
+
+        /* 第2行：作者信息 */
+        .pub-authors {
+            font-size: 0.95em;
+            color: #444;
+            margin-bottom: 1px;
+            line-height: 1.5;
+        }
+
+        /* α-β 排序标识样式 */
+        .ab-order {
+            font-family: "Times New Roman", Georgia, serif; /* 衬线体，像数学公式 */
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-right: 1px;
+            background-color: #f8f9fa; /* 极淡的背景 */
+            padding: 0 4px;
+            border-radius: 1px;
+        }
+
+        /* 第3行：会议/期刊全称 */
+        .pub-venue {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 2px; /* 与下方链接行的距离 */
+        }
+
+        /* 第4行：资料链接和高亮 */
+        .pub-materials {
+            font-size: 0.9em;
+            display: flex;       /* 使用 Flex 布局让元素对齐 */
+            flex-wrap: wrap;     /* 窄屏自动换行 */
+            align-items: center; /* 垂直居中 */
+            gap: 8px;           /* 元素之间的间距 */
+        }
+
+        /* 链接按钮样式 */
+        .pub-link {
+            text-decoration: none;
+            color: #0066cc;
+            font-family: "Courier New", Courier, monospace; /* 等宽字体 */
+            font-weight: 600;
+        }
+        .pub-link:hover {
+            text-decoration: underline;
+            color: #004499;
+        }
+
+        /* 高亮标签通用样式 (如 Oral, Spotlight) */
+        .highlight-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 700;
+            border: 1px solid;
+            letter-spacing: 0.5px;
+        }
+
+        /* Oral 样式: 红色系 */
+        .tag-oral {
+            background-color: #fce8e6;
+            color: #c0392b;
+            border-color: #e6b0aa;
+        }
+
+        /* Spotlight 样式: 橙色系 */
+        .tag-spotlight {
+            background-color: #fef5e7;
+            color: #d35400;
+            border-color: #f5cba7;
+        }
+
+		.tag-forthcoming {
+			background-color: #e8f6f3;  /* 极淡的青色背景 */
+			color: #16a085;             /* 深青色文字 */
+			border-color: #a3e4d7;      /* 边框颜色 */
+		}
+        
+        /* ==================== 论文列表样式结束 ==================== */
+</style>
 
 <A NAME="Publications"><h2>Publications</h2></A>
-*: alphabetical order <br>
-<ul>
-<li>* H. Aziz, <b>Y. Guo</b>, V. Kagita, B. Rastegari, M. Suzuki. "Social Welfare Maximization in Approval-Based Committee Voting under Uncertainty", AAMAS 2026.</li>
-<li>* H. Aziz, <b>Y. Guo</b>, Z. Sun. "Participation Incentives in Online Cooperative Games", AAMAS 2026.</li>
-<li>* <b>Y. Guo</b>, H. Zhou. "Minimizing Inequity in Facility Location Games", AAAI, 2026. </li>
-<li>* H. Aziz, <b>Y. Guo</b>, A. Lam, H. Zhou. "Learning-augmented Facility Location Mechanisms for the Envy Ratio Objective", NeurIPS, 2025. </li>
-<li><b>Y. Guo</b>, D. Hao, B. Li, M. Xiao, B. Khoussainov, "Strategyproofness and Monotone Allocation of Auction in Social Networks", IJCAI, 2025.</li>
-<li><b>Y. Guo</b>, D. Hao, M. Xiao, B. Li, "Networked Combinatorial Auction for Crowdsourcing and Crowdsensing", IEEE IoT-J, 2024.</li>
-<li><b>Y. Guo</b>, D. Hao, "Emerging Methods of Auction Design in Social Networks", IJCAI, 2021.</li>
-</p>
-</ul>
+<span class="ab-order">(&alpha;-&beta;)</span>: alphabetical order (<a href="https://www.ams.org/learning-careers/leaders/CultureStatement04.pdf?fbclid=IwAR3L5L-09zvS-7C7s1_tcVVvsRuVM6Y5chdTLXsGHMW9iH7faknK7YXUEyQ">Why?</a>) <br>
+
+<ul class="pub-list-vertical">
+        <li class="pub-item">
+            <div class="pub-title">Fair Transit Stop Placement: a Clustering Perspective and Beyond</div>
+            <div class="pub-authors">
+                <span class="ab-order" title="Authors listed in alphabetical order">(&alpha;-&beta;)</span>
+                H. Aziz, L.Gai, <b>Y. Guo</b>, J. Vollen
+            </div>
+            <div class="pub-venue">
+                Working Paper (Presented at FOCS 2025 Satellite Event: Trends in Approximation and Online Algorithms (TAO))
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Approximate Revenue Maximization for Diffusion Auctions</div>
+            <div class="pub-authors">
+                Y. Huang, D. Hao, Z. Fan, <b>Y. Guo</b>, B. Li 
+            </div>
+            <div class="pub-venue">
+                Working Paper
+            </div>
+            <div class="pub-materials">
+				<a href="https://arxiv.org/abs/2507.14470" class="pub-link">[PDF]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Social Welfare Maximization in Approval-Based Committee Voting under Uncertainty</div>
+            <div class="pub-authors">
+                <span class="ab-order" title="Authors listed in alphabetical order">(&alpha;-&beta;)</span>
+                H. Aziz, <b>Y. Guo</b>, V. Kagita, B. Rastegari, M. Suzuki
+            </div>
+            <div class="pub-venue">
+                In Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)
+            </div>
+            <div class="pub-materials">
+				<span class="highlight-tag tag-oral">Oral</span>
+				<a href="https://arxiv.org/abs/2503.00885" class="pub-link">[PDF]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Participation Incentives in Online Cooperative Games</div>
+            <div class="pub-authors">
+                <span class="ab-order" title="Authors listed in alphabetical order">(&alpha;-&beta;)</span>
+                H. Aziz, <b>Y. Guo</b>, Z. Sun
+            </div>
+            <div class="pub-venue">
+                In Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)
+            </div>
+            <div class="pub-materials">
+				<span class="highlight-tag tag-oral">Oral</span>
+                <a href="https://arxiv.org/abs/2502.19791" class="pub-link">[PDF]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Minimizing Inequity in Facility Location Games</div>
+            <div class="pub-authors">
+                <span class="ab-order">(&alpha;-&beta;)</span>
+                <b>Y. Guo</b>, H. Zhou
+            </div>
+            <div class="pub-venue">
+                In Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026)
+            </div>
+            <div class="pub-materials">
+                <span class="highlight-tag tag-oral">Oral</span>
+                <a href="./paper/mge_aaai26.pdf" class="pub-link">[PDF]</a>
+                <a href="./slides/aaai26_slides.pdf" class="pub-link">[Slides]</a>
+				<a href="./slides/aaai26_poster.pdf" class="pub-link">[Poster]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Learning-augmented Facility Location Mechanisms for the Envy Ratio Objective</div>
+            <div class="pub-authors">
+                <span class="ab-order">(&alpha;-&beta;)</span>
+                H. Aziz, <b>Y. Guo</b>, A. Lam, H. Zhou
+            </div>
+            <div class="pub-venue">
+                In Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025)
+            </div>
+            <div class="pub-materials">
+                <a href="https://arxiv.org/abs/2512.11193" class="pub-link">[PDF]</a>
+				<a href="./slides/ijcai25_workshop_slides.pdf" class="pub-link">[Slides]</a>
+                <a href="./slides/neurips25_poster.pdf" class="pub-link">[Poster]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Strategyproofness and Monotone Allocation of Auction in Social Networks</div>
+            <div class="pub-authors">
+                <b>Y. Guo</b>, D. Hao, B. Li, M. Xiao, B. Khoussainov
+            </div>
+            <div class="pub-venue">
+                In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025)
+            </div>
+            <div class="pub-materials">
+                <a href="https://arxiv.org/abs/2507.14472" class="pub-link">[PDF]</a>
+				<a href="./slides/ijcai25_slides.pdf" class="pub-link">[Slides]</a>
+				<a href="./slides/ijcai25_poster.pdf" class="pub-link">[Poster]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Networked Combinatorial Auction for Crowdsourcing and Crowdsensing</div>
+            <div class="pub-authors">
+                <b>Y. Guo</b>, D. Hao, M. Xiao, B. Li
+            </div>
+            <div class="pub-venue">
+                IEEE Internet of Things Journal (IEEE IoT-J, 2023)
+            </div>
+            <div class="pub-materials">
+                <a href="https://ieeexplore.ieee.org/document/10239473" class="pub-link">[Link]</a>
+            </div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">Emerging Methods of Auction Design in Social Networks</div>
+            <div class="pub-authors">
+                <b>Y. Guo</b>, D. Hao
+            </div>
+            <div class="pub-venue">
+                Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI 2021)
+            </div>
+            <div class="pub-materials">
+                <a href="https://arxiv.org/abs/2108.00381" class="pub-link">[PDF]</a>
+				<a href="./slides/ijcai21_slides" class="pub-link">[Slides]</a>
+				<a href="./slides/ijcai21_poster" class="pub-link">[Poster]</a>
+            </div>
+        </li>
+
+    </ul>
 <br />
- 
- <A NAME="Working Papers"><h2>Working Papers</h2></A>
- *: alphabetical order <br>
- <ul>
-<li>* H. Aziz, <b>Y. Guo</b>, J. Vollen. "Designing Fair Transit Networks: a Clustering Perspective and Beyond", Working in Progress. </li>
-<li>Y. Huang, D. Hao, Z. Fan, <b>Y. Guo</b>, B. Li, "Reserve Price and Approximate Revenue Maximization in Economic Networks", Submitted.</li>
-</p>
-</ul>
-<br />	
 
  
 <A NAME="Services"><h2>Services</h2></A>
@@ -107,7 +335,7 @@ Email: guoyuhang0921 at gmail.com <b>or</b> yuhang.guo2 at unsw.edu.au <br />
 <p><b>Program Committee</b>: </p>
 <font size="3"> 
 <ul>
-<li>IJCAI-24,25 MNet Workshop, IJCAI-25 AI and Social Good Track, AAAI-26, AAMAS-26</li>
+<li>IJCAI-24,25 MNet Workshop, IJCAI-25 AI and Social Good Track, AAAI-26, AAMAS-26, ICML-26</li>
 </ul>
 </font>
 <br />
